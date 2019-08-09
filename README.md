@@ -1,2 +1,2 @@
-# Run `pyrate` with `outsider` in R
-[![Build Status](https://travis-ci.org/dombennett/om..pyrate.svg?branch=master)](https://travis-ci.org/dombennett/om..pyrate)
+# Run `partitionfinder` with `outsider` in R
+[![Build Status](https://travis-ci.org/dombennett/om..partitionfinder.svg?branch=master)](https://travis-ci.org/dombennett/om..partitionfinder)
