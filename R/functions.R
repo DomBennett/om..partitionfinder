@@ -46,3 +46,23 @@ example_fetch <- function(type = c('nucleotide', 'morphology', 'aminoacid'),
 PartitionFinder <- function(...) {
   base_function(cmd = 'PartitionFinder.py', ...)
 }
+
+#' @name PartitionFinderProtein
+#' @title PartitionFinderProtein 2
+#' @description Run PartitionFinderProtein 2
+#' @param ... Arguments
+#' @example examples/PartitionFinderProtein.R
+#' @export
+PartitionFinderProtein <- function(...) {
+  base_function(cmd = 'PartitionFinderProtein.py', ...)
+}
+
+#' @name PartitionFinderMorphology
+#' @title PartitionFinderMorphology 2
+#' @description Run PartitionFinderMorphology 2
+#' @param ... Arguments
+#' @example examples/PartitionFinderMorphology.R
+#' @export
+PartitionFinderMorphology <- function(...) {
+  base_function(cmd = 'PartitionFinderMorphology.py', ...)
+}
