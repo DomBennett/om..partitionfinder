@@ -1,0 +1,18 @@
+Package: om..partitionfinder
+Type: Package
+Title: PartitionFinder2
+Version: 0.1.0
+Author: Dom Bennett
+Maintainer: Dom Bennett <dominic.john.bennett@gmail.com>
+Description: Install and run PartitionFinder 2 from R. PartitionFinder is free
+    open source software to select best-fit partitioning schemes and models of
+    molecular evolution for phylogenetic analyses.
+License: MIT + file LICENSE
+Encoding: UTF-8
+BugReports: https://github.com/dombennett/om..partitionfinder/issues
+RoxygenNote: 6.1.1
+Depends:
+    R (>= 3.3.0)
+Imports:
+    outsider.base,
+    outsider
