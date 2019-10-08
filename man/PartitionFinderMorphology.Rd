@@ -4,10 +4,12 @@
 \alias{PartitionFinderMorphology}
 \title{PartitionFinderMorphology 2}
 \usage{
-PartitionFinderMorphology(...)
+PartitionFinderMorphology(arglist = arglist_get(...), outdir = getwd())
 }
 \arguments{
-\item{...}{Arguments}
+\item{arglist}{Arguments for PartitionFinder}
+
+\item{outdir}{Filepath to output files are placed}
 }
 \description{
 Run PartitionFinderMorphology 2

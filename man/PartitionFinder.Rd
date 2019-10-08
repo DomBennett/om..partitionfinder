@@ -4,10 +4,12 @@
 \alias{PartitionFinder}
 \title{PartitionFinder 2}
 \usage{
-PartitionFinder(...)
+PartitionFinder(arglist = arglist_get(...), outdir = getwd())
 }
 \arguments{
-\item{...}{Arguments}
+\item{arglist}{Arguments for PartitionFinder}
+
+\item{outdir}{Filepath to output files are placed}
 }
 \description{
 Run PartitionFinder 2

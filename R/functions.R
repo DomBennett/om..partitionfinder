@@ -1,12 +1,11 @@
 
-base_function <- function(cmd, ...) {
-  arglist <- arglist_get(...)
+base_function <- function(cmd, arglist, wd) {
   # if input file determines wd, convert the filepath to its directory
   files_to_send <- filestosend_get(arglist = arglist)
   arglist <- c(paste0('/partitionfinder/', cmd), arglist)
   arglist <- arglist_parse(arglist = arglist)
   otsdr <- outsider_init(pkgnm = 'om..partitionfinder', cmd = 'python',
-                         wd = getwd(), files_to_send = files_to_send,
+                         wd = wd, files_to_send = files_to_send,
                          arglist = arglist)
   run(otsdr)
 }
@@ -40,29 +39,36 @@ example_fetch <- function(type = c('nucleotide', 'morphology', 'aminoacid'),
 #' @name PartitionFinder
 #' @title PartitionFinder 2
 #' @description Run PartitionFinder 2
-#' @param ... Arguments
+#' @param arglist Arguments for PartitionFinder
+#' @param outdir Filepath to output files are placed
 #' @example examples/PartitionFinder.R
 #' @export
-PartitionFinder <- function(...) {
-  base_function(cmd = 'PartitionFinder.py', ...)
+PartitionFinder <- function(arglist = arglist_get(...), outdir = getwd()) {
+  base_function(cmd = 'PartitionFinder.py', arglist = arglist, wd = outdir)
 }
 
 #' @name PartitionFinderProtein
 #' @title PartitionFinderProtein 2
 #' @description Run PartitionFinderProtein 2
-#' @param ... Arguments
+#' @param arglist Arguments for PartitionFinder
+#' @param outdir Filepath to output files are placed
 #' @example examples/PartitionFinderProtein.R
 #' @export
-PartitionFinderProtein <- function(...) {
-  base_function(cmd = 'PartitionFinderProtein.py', ...)
+PartitionFinderProtein <- function(arglist = arglist_get(...),
+                                   outdir = getwd()) {
+  base_function(cmd = 'PartitionFinderProtein.py', arglist = arglist,
+                wd = outdir)
 }
 
 #' @name PartitionFinderMorphology
 #' @title PartitionFinderMorphology 2
 #' @description Run PartitionFinderMorphology 2
-#' @param ... Arguments
+#' @param arglist Arguments for PartitionFinder
+#' @param outdir Filepath to output files are placed
 #' @example examples/PartitionFinderMorphology.R
 #' @export
-PartitionFinderMorphology <- function(...) {
-  base_function(cmd = 'PartitionFinderMorphology.py', ...)
+PartitionFinderMorphology <- function(arglist = arglist_get(...),
+                                      outdir = getwd()) {
+  base_function(cmd = 'PartitionFinderMorphology.py', arglist = arglist,
+                wd = outdir)
 }

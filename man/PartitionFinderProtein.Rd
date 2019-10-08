@@ -4,10 +4,12 @@
 \alias{PartitionFinderProtein}
 \title{PartitionFinderProtein 2}
 \usage{
-PartitionFinderProtein(...)
+PartitionFinderProtein(arglist = arglist_get(...), outdir = getwd())
 }
 \arguments{
-\item{...}{Arguments}
+\item{arglist}{Arguments for PartitionFinder}
+
+\item{outdir}{Filepath to output files are placed}
 }
 \description{
 Run PartitionFinderProtein 2
