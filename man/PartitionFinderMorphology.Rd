@@ -23,5 +23,5 @@ example_fetch <- module_import('example_fetch',
 # bring PartitionFinder examples to working directory
 example_fetch(type = 'morphology')
 # run on the "morphology" example folder
-PartitionFinderMorphology('morphology')
+PartitionFinderMorphology(arglist = c('--raxml', 'morphology'))
 }

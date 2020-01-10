@@ -4,8 +4,7 @@
 \alias{example_fetch}
 \title{Retrieve PartitionFinder example files}
 \usage{
-example_fetch(type = c("nucleotide", "morphology", "aminoacid"),
-  dr = getwd())
+example_fetch(type = c("nucleotide", "morphology", "aminoacid"), dr = getwd())
 }
 \arguments{
 \item{type}{Either nucleotide, morphology or aminoacid}
@@ -26,5 +25,5 @@ example_fetch <- module_import('example_fetch',
 # bring PartitionFinder examples to working directory
 example_fetch(type = 'nucleotide')
 # run on the "nucleotide" example folder
-PartitionFinder('nucleotide')
+PartitionFinder(arglist = 'nucleotide')
 }

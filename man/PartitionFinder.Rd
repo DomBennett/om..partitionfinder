@@ -23,5 +23,5 @@ example_fetch <- module_import('example_fetch',
 # bring PartitionFinder examples to working directory
 example_fetch(type = 'nucleotide')
 # run on the "nucleotide" example folder
-PartitionFinder('nucleotide')
+PartitionFinder(arglist = 'nucleotide')
 }

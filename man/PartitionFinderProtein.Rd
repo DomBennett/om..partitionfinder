@@ -23,5 +23,5 @@ example_fetch <- module_import('example_fetch',
 # bring PartitionFinder examples to working directory
 example_fetch(type = 'aminoacid')
 # run on the "aminoacid" example folder
-PartitionFinderProtein('aminoacid')
+PartitionFinderProtein(arglist = 'aminoacid')
 }
